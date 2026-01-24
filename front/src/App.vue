@@ -4,7 +4,12 @@ import Header from './components/header.vue'
 
 <template>
     <Header></Header>
-    <router-view></router-view>
+    <div class="w-full justify-between flex">
+        <router-link to="/" class="text-white">Главная</router-link>
+        <router-link to="/service" class="text-white">Сервис</router-link>
+    </div>
+    
+    <router-view />
 </template>
 
 <style scoped></style>
