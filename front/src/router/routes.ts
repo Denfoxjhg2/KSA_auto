@@ -1,4 +1,4 @@
-import Home from '../pages/home.vue';
+import Home from '../pages/Main.vue';
 import Service from '../pages/Service.vue';
 
 const routes = [

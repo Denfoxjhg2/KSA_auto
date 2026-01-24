@@ -3,13 +3,14 @@ import Header from './components/header.vue'
 </script>
 
 <template>
-    <Header></Header>
-    <div class="w-full justify-between flex">
-        <router-link to="/" class="text-white">Главная</router-link>
-        <router-link to="/service" class="text-white">Сервис</router-link>
+    <div class="m-auto">
+        <Header></Header>
+        <div>
+        <router-link to="/" ><h1 class="text-white">главная</h1></router-link>
+        <router-link to="/service"><h1 class="text-white">сурвис</h1></router-link>
+        <router-view />
     </div>
-    
-    <router-view />
+    </div>
 </template>
 
 <style scoped></style>
