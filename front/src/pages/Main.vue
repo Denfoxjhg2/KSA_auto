@@ -15,23 +15,23 @@
         <h1 class="px-7 text-white font-sans text-center font-medium text-lg">Мы <span class="text-[#FC0320]">задаем стандарты</span> детейлинга в нашем регионе. Наш <span class="text-[#FC0320]">многолетний опыт</span> — ваша лучшая гарантия результата.</h1>
     </section>
     <section class="flex flex-col gap-6 px-7 -z-1 text-white font-medium pt-12">
-        <div class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320]">
+        <div class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] shrink min-h-60">
             <img src="/photos/elements/card1.png" alt="decor" class="pl-3">
             <div class="grid gap-4 p-4 w-44 text-end">
                 <h1 class="font-sans text-lg">Качество и время</h1>
                 <p class="text-sm">Берём ограниченное количество заказов, чтобы результат был безупречен</p>
             </div>
         </div>
-        <div class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320]">
+        <div class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] shrink min-h-60">
             <div class="grid gap-4 p-4 w-44">
                 <h1 class="font-sans text-lg">Премиум материалы</h1>
                 <p class="text-sm ">Только профессиональная химия и точка.</p>
             </div>
             <img src="/photos/elements/card2.png" alt="decor" class="pr-3">
         </div>
-        <div class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] text-center">
+        <div class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] text-center shrink min-h-60">
             <div class="flex flex-col items-center gap-4 p-4">
-                <h1 class="font-sans text-lg">Комфорт и забота</h1>
+                <h1 class="font-sans text-base">Комфорт и забота</h1>
                 <img src="/icons/wifi.svg" alt="">
                 <div class="flex">
                     <img src="/icons/cup.svg" alt="">
@@ -40,6 +40,44 @@
                 </div>
                 <h1 class="text-sm">Забота не только об авто, но и о вас</h1>
             </div>
+        </div>
+    </section>
+    <section class="flex flex-col text-white">
+        <div class="flex flex-col">
+            <h1>Наши услуги</h1>
+            <input type="text">
+            <button>
+                <p>Скрыть</p>
+            </button>
+        </div>
+        <div>
+            <div>
+            <img src="/photos/carwash.jpg" alt="wash">
+        </div>
+        <div>
+            <img src="/photos/detailing.jpg" alt="wash">
+        </div>
+        <div>
+            <img src="/photos/polish.jpg" alt="wash">
+        </div>
+        <div>
+            <img src="/photos/protect.jpg" alt="wash">
+        </div>
+        <div>
+            <img src="/photos/enginewash.jpg" alt="wash">
+        </div>
+        <div>
+            <img src="/photos/soundiso.jpg" alt="wash">
+        </div>
+        <div>
+            <img src="/photos/drywash.jpg" alt="wash">
+        </div>
+        <div>
+            <img src="/photos/music.jpg" alt="wash">
+        </div>
+        <div>
+            <img src="/photos/chrome.jpg" alt="wash">
+        </div>
         </div>
     </section>
 </template>
