@@ -1,22 +1,22 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Mont.ttf');
-  font-weight: 400 500; 
+  font-family: "Montserrat";
+  src: url("/fonts/Mont.ttf");
+  font-weight: 400 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Unbounded';
-  src: url('/fonts/Unbounded.ttf');
-  font-weight: 400 500; 
+  font-family: "Unbounded";
+  src: url("/fonts/Unbounded.ttf");
+  font-weight: 400 500;
   font-display: swap;
 }
 
 @theme {
-  --font-sans: 'Unbounded', sans-serif;
-  --font-serif: 'Montserrat', serif;
+  --font-sans: "Unbounded", sans-serif;
+  --font-serif: "Montserrat", serif;
 }
 
 * {
@@ -28,6 +28,6 @@
 }
 
 body {
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   @apply font-serif;
 }
