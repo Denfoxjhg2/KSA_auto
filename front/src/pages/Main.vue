@@ -87,34 +87,46 @@
       </button>
     </div>
     <div class="grid grid-cols-1 gap-6 auto-rows-fr">
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/carwash.jpg)] bg-cover w-full h-72">
-        <h1>Детейлинг-мойка</h1>
+      <div class="overflow-hidden rounded-lg bg-[url(/photos/carwash.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
+        <h1 class="ml-1 font-sans">Детейлинг-мойка</h1>
+        <div class="bg-white h-0.5 mb-10"></div>
       </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/detailing.jpg)] bg-cover w-full h-72">
-        <h1>Химчистка салона</h1>
+      <div class="overflow-hidden rounded-lg bg-[url(/photos/detailing.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
+        <h1 class="ml-1 font-sans">Химчистка салона</h1>
+        <div class="bg-white h-0.5 mb-10"></div>
       </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/polish.jpg)] bg-cover w-full h-72">
-        <h1>Полировка + защита</h1>
+      <div class="overflow-hidden rounded-lg bg-[url(/photos/polish.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
+        <h1 class="ml-1 font-sans">Полировка + защита</h1>
+        <div class="bg-white h-0.5 mb-10"></div>
       </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/protect.jpg)] bg-cover w-full h-72">
-        <h1>Полировка + защита</h1>
+      <div class="overflow-hidden rounded-lg bg-[url(/photos/protect.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
+        <h1 class="ml-1 font-sans">Защитная оклейка</h1>
+        <div class="bg-white h-0.5 mb-10"></div>
       </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/enginewash.jpg)] bg-cover w-full h-72">
-        <h1>Мойка двигателя</h1>
+      <div class="overflow-hidden rounded-lg bg-[url(/photos/enginewash.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
+        <h1 class="ml-1 font-sans">Мойка двигателя</h1>
+        <div class="bg-white h-0.5 mb-10"></div>
       </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/soundiso.jpg)] bg-cover w-full h-72">
-        <h1>Шумоизоляция</h1>
+      <div class="overflow-hidden rounded-lg bg-[url(/photos/soundiso.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
+        <h1 class="ml-1 font-sans">Шумоизоляция</h1>
+        <div class="bg-white h-0.5 mb-10"></div>
       </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/drywash.jpg)] bg-cover w-full h-72">
-        <h1>Сухой туман</h1>
+      <div class="overflow-hidden rounded-lg bg-[url(/photos/drywash.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
+        <h1 class="ml-1 font-sans">Сухой туман</h1>
+        <div class="bg-white h-0.5 mb-10"></div>
       </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/music.jpg)] bg-cover w-full h-72">
-        <h1>Автозвук</h1>
+      <div class="overflow-hidden rounded-lg bg-[url(/photos/music.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
+        <h1 class="ml-1 font-sans">Автозвук</h1>
+        <div class="bg-white h-0.5 mb-10"></div>
       </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/chrome.jpg)] bg-cover w-full h-72">
-        <h1>Антихром</h1>
+      <div class="overflow-hidden rounded-lg bg-[url(/photos/chrome.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
+        <h1 class="ml-1 font-sans">Антихром</h1>
+        <div class="bg-white h-0.5 mb-10"></div>
       </div>
     </div>
+  </section>
+  <section class="px-2.5 pt-12">
+    <h1 class="font-sans text-white text-2xl text-center">Примеры наших работ</h1>
   </section>
 </template>
 
