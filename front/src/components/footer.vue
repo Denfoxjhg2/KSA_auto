@@ -4,19 +4,21 @@
   <footer class="px-8 pt-28">
     <div class="w-full h-0.5 bg-white"></div>
     <img src="/photos/footer.jpg" alt="garage photo" class="py-10 rounded-lg">
-    <p class="text-gray-500">
+    <p class="text-gray-500 text-sm pb-1">
         Детейлинг сервис
     </p>
     <img src="/det_logo.svg" alt="logo">
-    <p class="text-gray-500">
-        c.Завьялово, Нагорная улица, 32Б
-    </p>
-    <p class="text-gray-500">
-        +7 (982) 827-92-78
-    </p>
-    <p class="text-gray-500">
-        с 9 до 21
-    </p>
+    <div class="flex flex-col gap-2 pt-2 font-sans">
+        <p class="text-gray-500 text-sm">
+            c.Завьялово, Нагорная улица, 32Б
+        </p>
+        <p class="text-gray-500 text-sm">
+            +7 (982) 827-92-78
+        </p>
+        <p class="text-gray-500 text-sm">
+            с 9 до 21
+        </p>
+    </div>
     <div class="flex gap-26 py-8">
         <div class="flex gap-4">
             <button class="w-11 h-11 bg-[#FC0320] rounded-lg cursor-pointer shadow-xl/20 shadow-[#FC0320]">
