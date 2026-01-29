@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ExamplesCarousel from '@/components/ImageCarousel.vue'
+</script>
 
 <template>
   <section
@@ -125,9 +127,49 @@
       </div>
     </div>
   </section>
-  <section class="px-2.5 pt-12">
-    <h1 class="font-sans text-white text-2xl text-center">Примеры наших работ</h1>
-  </section>
+  <section class="px-2.5 pt-12 pb-20">
+      <div class="flex flex-col items-center gap-6 mb-8">
+        <h1 class="font-sans text-white text-2xl md:text-3xl text-center">Примеры наших работ</h1>
+      </div>
+      <ExamplesCarousel 
+        :autoplay-delay="5000"
+        :show-controls="true"
+        :show-indicators="false"
+      />
+    </section>
+    <section>
+      <h1 class="font-sans text-white text-2xl md:text-3xl text-center">Как строится работа?</h1>
+      <div class="flex flex-col px-7 pt-12 gap-8">
+        <div class="rounded-lg bg-[#141414] border-[#1F1F1F] w-full h-80 gap-4 flex flex-col">
+          <div class="flex items-center text-white px-7 pt-7 gap-2 font-sans">
+            <h1 class="text-[#FC0320] text-shadow-2xl/30 text-4xl">1.</h1>
+            <p class="text-lg">Осмотр и консультация</p>
+          </div>
+          <p class="px-8 text-white">Осматриваем автомобиль, подробно объясняем все этапы работ. Согласовываем стоимость, сроки и материалы, даём рекомендации.</p>
+        </div>
+        <div class="rounded-lg bg-[#141414] border-[#1F1F1F] w-full h-80 gap-4 flex flex-col">
+          <div class="flex items-center text-white px-7 pt-7 gap-2 font-sans">
+            <h1 class="text-[#FC0320] text-shadow-2xl/30 text-4xl">2.</h1>
+            <p class="text-lg">Итоги встречи</p>
+          </div>
+          <p class="px-8 text-white">Обсудили, согласовали, утвердили — работа начата. Процесс будет прозрачным от первого до последнего дня.</p>
+        </div>
+        <div class="rounded-lg bg-[#141414] border-[#1F1F1F] w-full h-80 gap-4 flex flex-col">
+          <div class="flex items-center text-white px-7 pt-7 gap-2 font-sans">
+            <h1 class="text-[#FC0320] text-shadow-2xl/30 text-4xl">3.</h1>
+            <p class="text-lg">Работа и отчетность</p>
+          </div>
+          <p class="px-8 text-white">Вы приезжаете к нам или мы к вам - выполняем работы качественно. Регулярно отправляем фотоотчёт в мессенджер o ходе процесса.</p>
+        </div>
+        <div class="rounded-lg bg-[#141414] border-[#1F1F1F] w-full h-80 gap-4 flex flex-col">
+          <div class="flex items-center text-white px-7 pt-7 gap-2 font-sans">
+            <h1 class="text-[#FC0320] text-shadow-2xl/30 text-4xl">4.</h1>
+            <p class="text-lg">Результат и гарантии</p>
+          </div>
+          <p class="px-8 text-white">Передаём готовый автомобиль, отвечаем на все вопросы. Обеспечиваем постгарантийное обслуживание и поддержку.</p>
+        </div>
+      </div>
+    </section>
 </template>
 
 <style scoped></style>
