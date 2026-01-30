@@ -1,7 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1 class="text-white">service</h1>
+  <section>
+    <div class="bg-[url(/photos/services/polish.jpg)]">
+      
+    </div>
+  </section>
 </template>
 
 <style scoped></style>

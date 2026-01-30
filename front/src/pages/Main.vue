@@ -9,7 +9,7 @@ import ExamplesCarousel from '@/components/ImageCarousel.vue'
     <img
       src="/photos/main.jpg"
       alt="mercedes"
-      class="h-full object-cover absolute -z-2"
+      class="h-full w-full object-cover absolute -z-2"
     />
     <div class="grid gap-12 mb-12">
       <h1 class="font-sans text-white px-5 text-right text-3xl font-medium">
@@ -26,7 +26,7 @@ import ExamplesCarousel from '@/components/ImageCarousel.vue'
     </button>
   </section>
   <section
-    class="h-[200px] bg-[url(/photos/main_next.jpg)] flex items-center justify-center -z-1"
+    class="h-[200px] bg-[url(/photos/main_next.jpg)] flex items-center justify-center bg-cover w-full -z-1"
   >
     <h1 class="px-7 text-white font-sans text-center font-medium text-lg">
       Мы <span class="text-[#FC0320]">задаем стандарты</span> детейлинга в нашем
@@ -36,7 +36,7 @@ import ExamplesCarousel from '@/components/ImageCarousel.vue'
   </section>
   <section class="flex flex-col gap-6 px-7 -z-1 text-white font-medium pt-12">
     <div
-      class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] shrink min-h-60"
+      class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] justify-between min-h-60"
     >
       <img src="/photos/elements/card1.png" alt="decor" class="pl-3" />
       <div class="grid gap-4 p-4 w-44 text-end">
@@ -47,7 +47,7 @@ import ExamplesCarousel from '@/components/ImageCarousel.vue'
       </div>
     </div>
     <div
-      class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] shrink min-h-60"
+      class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] justify-between min-h-60"
     >
       <div class="grid gap-4 p-4 w-44">
         <h1 class="font-sans text-lg">Премиум материалы</h1>
@@ -56,7 +56,7 @@ import ExamplesCarousel from '@/components/ImageCarousel.vue'
       <img src="/photos/elements/card2.png" alt="decor" class="pr-3" />
     </div>
     <div
-      class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] text-center shrink min-h-60"
+      class="flex bg-[#FC0320] rounded-xl shadow-xl/20 shadow-[#FC0320] text-center min-h-60"
     >
       <div class="flex flex-col items-center gap-4 p-4">
         <h1 class="font-sans text-base">Комфорт и забота</h1>
