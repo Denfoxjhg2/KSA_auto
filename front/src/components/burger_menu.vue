@@ -7,7 +7,6 @@ const props = defineProps<{
 
 const emit = defineEmits(['close'])
 
-// Массив ссылок для меню
 const menuItems = [
   { text: 'Главная', path: '/' },
   { text: 'Услуги', path: '/services' },
@@ -17,23 +16,18 @@ const menuItems = [
 </script>
 
 <template>
-  <!-- Основной контейнер меню -->
   <div 
     class="fixed top-0 left-0 h-full w-full z-40 transition-all duration-300"
     :class="isOpen ? 'visible' : 'invisible'"
   >
-    <!-- Оверлей (фон) -->
     <div 
       class="absolute top-0 left-0 h-full w-full bg-[#0d0d0d] transition-opacity duration-300"
       :class="isOpen ? 'opacity-70' : 'opacity-0'"
       @click="$emit('close')"
     ></div>
-
-    <!-- Навигация -->
     <nav 
       class="relative h-full w-full flex flex-col items-center justify-center"
     >
-      <!-- Кнопка закрытия (крестик) -->
       <button
         class="absolute top-8 right-8 w-12 h-12 rounded-full flex items-center justify-center text-white hover:text-[#FC0320] transition-colors duration-200 z-50"
         @click="$emit('close')"
@@ -42,8 +36,6 @@ const menuItems = [
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-
-      <!-- Ссылки -->
       <ul class="space-y-10 text-center">
         <li 
           v-for="item in menuItems" 
@@ -63,8 +55,6 @@ const menuItems = [
           </RouterLink>
         </li>
       </ul>
-
-      <!-- Дополнительная информация (опционально) -->
       <div 
         class="absolute bottom-10 left-0 right-0 text-center text-white opacity-80 text-sm"
         :class="isOpen ? 'opacity-80' : 'opacity-0'"

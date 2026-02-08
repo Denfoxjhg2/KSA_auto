@@ -32,7 +32,7 @@ onUnmounted(() => {
       backgroundColor: `rgba(13, 13, 13, ${Math.min(scrollY / 200, 0.95)})` 
     }"
   >
-    <img src="/det_logo.svg" alt="logo" class="w-32" />
+    <router-link to="/"><img src="/det_logo.svg" alt="logo" class="w-32" /></router-link>
     <button 
       class="w-11 h-11 bg-[#FC0320] rounded-lg cursor-pointer flex items-center justify-center transition-transform hover:scale-105"
       @click="() => emit('toggleBurger')"

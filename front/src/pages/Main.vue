@@ -1,5 +1,68 @@
 <script setup lang="ts">
 import ExamplesCarousel from '@/components/ImageCarousel.vue'
+interface Service {
+  id: number
+  title: string
+  image: string
+  route: string | { name: string }
+}
+
+const services: Service[] = [
+  {
+    id: 1,
+    title: 'Детейлинг-мойка',
+    image: '/photos/carwash.jpg',
+    route: '/detailing'
+  },
+  {
+    id: 2,
+    title: 'Химчистка салона',
+    image: '/photos/detailing.jpg',
+    route: '/dryclean'
+  },
+  {
+    id: 3,
+    title: 'Полировка + защита',
+    image: '/photos/polish.jpg',
+    route: '/polish'
+  },
+  {
+    id: 4,
+    title: 'Защитная оклейка',
+    image: '/photos/protect.jpg',
+    route: '/protection'
+  },
+  {
+    id: 5,
+    title: 'Мойка двигателя',
+    image: '/photos/enginewash.jpg',
+    route: '/enginewash'
+  },
+  {
+    id: 6,
+    title: 'Шумоизоляция',
+    image: '/photos/soundiso.jpg',
+    route: '/antisound'
+  },
+  {
+    id: 7,
+    title: 'Сухой туман',
+    image: '/photos/drywash.jpg',
+    route: '/fogclean'
+  },
+  {
+    id: 8,
+    title: 'Автозвук',
+    image: '/photos/music.jpg',
+    route: '/music'
+  },
+  {
+    id: 9,
+    title: 'Антихром',
+    image: '/photos/chrome.jpg',
+    route: '/antichrome'
+  }
+]
 </script>
 
 <template>
@@ -75,7 +138,7 @@ import ExamplesCarousel from '@/components/ImageCarousel.vue'
   <section class="flex flex-col text-white gap-6 px-7 -z-1 pt-12">
     <div class="flex flex-col items-center gap-4">
       <h1 class="font-sans text-3xl">Наши услуги</h1>
-      <div class="py-2 px-6 bg-[#2A2A2A] rounded-2xl flex">
+      <!-- <div class="py-2 px-6 bg-[#2A2A2A] rounded-2xl flex">
         <input
           type="text"
           placeholder="Поиск..."
@@ -86,45 +149,19 @@ import ExamplesCarousel from '@/components/ImageCarousel.vue'
       <button class="flex gap-2 text-[#7E7E7E]">
         <img src="/icons/arr_down.svg" alt="" />
         <p>Скрыть</p>
-      </button>
+      </button> -->
     </div>
     <div class="grid grid-cols-1 gap-6 auto-rows-fr">
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/carwash.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
-        <h1 class="ml-1 font-sans">Детейлинг-мойка</h1>
+      <router-link 
+        v-for="service in services" 
+        :key="service.id"
+        :to="service.route"
+        class="overflow-hidden rounded-lg bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7 block hover:scale-[1.02] transition-transform duration-300"
+        :style="{ backgroundImage: `url(${service.image})` }"
+      >
+        <h1 class="ml-1 font-sans text-white">{{ service.title }}</h1>
         <div class="bg-white h-0.5 mb-10"></div>
-      </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/detailing.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
-        <h1 class="ml-1 font-sans">Химчистка салона</h1>
-        <div class="bg-white h-0.5 mb-10"></div>
-      </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/polish.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
-        <h1 class="ml-1 font-sans">Полировка + защита</h1>
-        <div class="bg-white h-0.5 mb-10"></div>
-      </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/protect.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
-        <h1 class="ml-1 font-sans">Защитная оклейка</h1>
-        <div class="bg-white h-0.5 mb-10"></div>
-      </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/enginewash.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
-        <h1 class="ml-1 font-sans">Мойка двигателя</h1>
-        <div class="bg-white h-0.5 mb-10"></div>
-      </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/soundiso.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
-        <h1 class="ml-1 font-sans">Шумоизоляция</h1>
-        <div class="bg-white h-0.5 mb-10"></div>
-      </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/drywash.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
-        <h1 class="ml-1 font-sans">Сухой туман</h1>
-        <div class="bg-white h-0.5 mb-10"></div>
-      </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/music.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
-        <h1 class="ml-1 font-sans">Автозвук</h1>
-        <div class="bg-white h-0.5 mb-10"></div>
-      </div>
-      <div class="overflow-hidden rounded-lg bg-[url(/photos/chrome.jpg)] bg-cover w-full h-72 flex flex-col justify-end gap-1 px-7">
-        <h1 class="ml-1 font-sans">Антихром</h1>
-        <div class="bg-white h-0.5 mb-10"></div>
-      </div>
+      </router-link>
     </div>
   </section>
   <section class="px-2.5 pt-12 pb-20">
