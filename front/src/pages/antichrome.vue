@@ -1,12 +1,12 @@
-<script>
+<script setup>
 import { ImgComparisonSlider } from '@img-comparison-slider/vue';
 
-export default {
-  name: 'ExampleComponent',
-  components: {
-    ImgComparisonSlider,
-  },
-};
+const openVK = () => {
+  window.open('https://vk.com/club228130841', '_blank')
+}
+const openTG = () => {
+  window.open('https://t.me/KSAauto_detailing', '_blank')
+}
 </script>
 
 <template>
@@ -29,16 +29,28 @@ export default {
     <ImgComparisonSlider>
       <img
         slot="first"
-        style="width: 100%"
+        class="w-full h-full object-cover"
         src="/photos/before_after/polish.png"
       />
       <img
         slot="second"
-        style="width: 100%"
+        class="w-full h-full object-cover"
         src="/photos/before_after/polish2.png"
       />
     </ImgComparisonSlider>
   </section>
+  <section class="text-white px-8 pt-12 flex flex-col gap-3 items-center">
+    <h1 class="font-sans">Нет времени написать?</h1>
+    <p>Не вопрос, напишите нам в соцсети и мы рассчитаем стоимость</p>
+    <div class="flex gap-4 font-sans pt-2">
+      <button @click="openVK" class="bg-[#FC0320] rounded-lg cursor-pointer shadow-xl/20 shadow-[#FC0320] flex gap-2 p-2">
+          <img src="/icons/vk.svg" alt="vk" class="w-8"/>
+          <p>Мы в ВК</p>
+      </button>
+      <button @click="openTG" class="bg-[#FC0320] rounded-lg cursor-pointer shadow-xl/20 shadow-[#FC0320] flex gap-2 p-2">
+          <img src="/icons/tg.svg" alt="tg" class="w-8"/>
+          <p>Мы в ТГ</p>
+      </button>
+    </div>
+  </section>
 </template>
-
-<style scoped></style>

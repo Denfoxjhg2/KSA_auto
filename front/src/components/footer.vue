@@ -45,8 +45,6 @@ const openMAP = () => {
         </button>
     </div>
     <div class="w-full h-0.5 bg-white"></div>
-    <p class="text-gray-500 pt-4 text-end font-sans">Все права защищены. design by daniel</p>
+    <p class="text-gray-500 pt-4 text-end font-sans">Все права защищены.</p>
   </footer>
 </template>
-
-<style scoped></style>

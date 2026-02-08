@@ -171,5 +171,3 @@ import ExamplesCarousel from '@/components/ImageCarousel.vue'
       </div>
     </section>
 </template>
-
-<style scoped></style>
