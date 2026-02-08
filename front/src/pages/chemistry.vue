@@ -11,12 +11,12 @@ const openTG = () => {
 
 <template>
   <section class="pt-30">
-    <div class="bg-[url(/photos/services/polish.jpg)] h-[550px] bg-cover text-white text-xl font-sans flex flex-col justify-between py-8">
+    <div class="bg-[url(/photos/detailing.jpg)] h-[550px] bg-cover text-white text-xl font-sans flex flex-col justify-between py-8">
       <div class="flex gap-4 items-center text-3x justify-around px-8">
-        <img src="/icons/polish.svg" alt="shield" class="h-20">
-        <h1>Полировка <span class="text-[#FC0320]">+</span> защита</h1>
+        <img src="/icons/chem.svg" alt="chemistry" class="h-20">
+        <h1>Химчистка салона</h1>
       </div>
-      <p class="px-8 flex">Восстановление глянца и нанесение керамики или воска. Гарантируем долговременную защиту и зеркальный блеск</p>
+      <p class="px-8 flex">Комплексное очищение всех поверхностей от любых загрязнений. Восстанавливаем чистоту и свежесть как в новом автомобиле.</p>
     </div>
   </section>
   <section class="flex items-center justify-center pt-6">
@@ -30,12 +30,12 @@ const openTG = () => {
       <img
         slot="first"
         class="w-full h-full object-cover"
-        src="/photos/before_after/polish.png"
+        src="/photos/before_after/chem.png"
       />
       <img
         slot="second"
         class="w-full h-full object-cover"
-        src="/photos/before_after/polish2.png"
+        src="/photos/before_after/chem2.png"
       />
     </ImgComparisonSlider>
   </section>

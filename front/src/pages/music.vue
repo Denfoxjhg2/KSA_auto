@@ -1,6 +1,4 @@
 <script setup>
-import { ImgComparisonSlider } from '@img-comparison-slider/vue';
-
 const openVK = () => {
   window.open('https://vk.com/club228130841', '_blank')
 }
@@ -11,12 +9,12 @@ const openTG = () => {
 
 <template>
   <section class="pt-30">
-    <div class="bg-[url(/photos/services/polish.jpg)] h-[550px] bg-cover text-white text-xl font-sans flex flex-col justify-between py-8">
+    <div class="bg-[url(/photos/music.jpg)] h-[550px] bg-cover text-white text-xl font-sans flex flex-col justify-between py-8">
       <div class="flex gap-4 items-center text-3x justify-around px-8">
-        <img src="/icons/polish.svg" alt="shield" class="h-20">
-        <h1>Полировка <span class="text-[#FC0320]">+</span> защита</h1>
+        <img src="/icons/music.svg" alt="shield" class="h-20">
+        <h1>Автозвук</h1>
       </div>
-      <p class="px-8 flex">Восстановление глянца и нанесение керамики или воска. Гарантируем долговременную защиту и зеркальный блеск</p>
+      <p class="px-8 flex">Профессиональная установка аудиосистем любого уровня. Наслаждайтесь чистым и мощным звуком во время движения.</p>
     </div>
   </section>
   <section class="flex items-center justify-center pt-6">
@@ -26,18 +24,7 @@ const openTG = () => {
   </section>
   <section class="pt-12 px-8">
     <h1 class="font-sans text-white pb-6">Ловкость рук наших мастеров. Никакой магии!</h1>
-    <ImgComparisonSlider>
-      <img
-        slot="first"
-        class="w-full h-full object-cover"
-        src="/photos/before_after/polish.png"
-      />
-      <img
-        slot="second"
-        class="w-full h-full object-cover"
-        src="/photos/before_after/polish2.png"
-      />
-    </ImgComparisonSlider>
+    <img src="/photos/music.jpg" alt="automusic">
   </section>
   <section class="text-white px-8 pt-12 flex flex-col gap-3 items-center">
     <h1 class="font-sans">Нет времени написать?</h1>

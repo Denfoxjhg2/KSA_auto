@@ -11,7 +11,7 @@ const openTG = () => {
 
 <template>
   <section class="pt-30">
-    <div class="bg-[url(/photos/services/polish.jpg)] h-[550px] bg-cover text-white text-xl font-sans flex flex-col justify-between py-8">
+    <div class="bg-[url(/photos/polish.jpg)] h-[550px] bg-cover text-white text-xl font-sans flex flex-col justify-between py-8">
       <div class="flex gap-4 items-center text-3x justify-around px-8">
         <img src="/icons/polish.svg" alt="shield" class="h-20">
         <h1>Полировка <span class="text-[#FC0320]">+</span> защита</h1>
@@ -24,7 +24,7 @@ const openTG = () => {
       <h1 class="text-white py-3 px-8 font-sans">Записаться</h1>
     </button>
   </section>
-  <section class="pt-12 px-8">
+  <section class="pt-12 px-8 flex flex-col items-center">
     <h1 class="font-sans text-white pb-6">Ловкость рук наших мастеров. Никакой магии!</h1>
     <ImgComparisonSlider>
       <img
