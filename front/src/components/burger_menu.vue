@@ -9,9 +9,7 @@ const emit = defineEmits(['close'])
 
 const menuItems = [
   { text: 'Главная', path: '/' },
-  { text: 'Услуги', path: '/services' },
-  { text: 'О нас', path: '/about' },
-  { text: 'Контакты', path: '/contact' },
+  { text: 'Личный кабинет', path: '/lk' },
 ]
 </script>
 

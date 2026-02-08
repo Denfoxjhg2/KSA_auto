@@ -67,13 +67,8 @@ const services: Service[] = [
 
 <template>
   <section
-    class="h-[875px] flex flex-col items-end relative justify-center -z-1"
+    class="h-[875px] bg-[url(/photos/main.jpg)] flex flex-col items-end justify-center -z-1 bg-cover"
   >
-    <img
-      src="/photos/main.jpg"
-      alt="mercedes"
-      class="h-full w-full object-cover absolute -z-2"
-    />
     <div class="grid gap-12 mb-12">
       <h1 class="font-sans text-white px-5 text-right text-3xl font-medium">
         ВАШ КОМФОРТ В АВТОМОБИЛЕ — НАШ ПРИОРИТЕТ
@@ -82,11 +77,13 @@ const services: Service[] = [
         Профессионалы своего дела, не просто мойка
       </p>
     </div>
-    <button
-      class="py-3 px-9 bg-[#FC0320] rounded-lg cursor-pointer self-center shadow-xl/20 shadow-[#FC0320]"
-    >
-      <h1 class="text-white font-sans font-medium text-base">Записаться</h1>
-    </button>
+    <router-link to="/order" class="self-center">
+      <button
+        class="py-3 px-9 bg-[#FC0320] rounded-lg cursor-pointer self-center shadow-xl/20 shadow-[#FC0320]"
+      >
+        <h1 class="text-white font-sans font-medium text-base">Записаться</h1>
+      </button>
+    </router-link>
   </section>
   <section
     class="h-[200px] bg-[url(/photos/main_next.jpg)] flex items-center justify-center bg-cover w-full -z-1"
@@ -135,7 +132,7 @@ const services: Service[] = [
       </div>
     </div>
   </section>
-  <section class="flex flex-col text-white gap-6 px-7 -z-1 pt-12">
+  <section id="services" class="flex flex-col text-white gap-6 px-7 -z-1 pt-12">
     <div class="flex flex-col items-center gap-4">
       <h1 class="font-sans text-3xl">Наши услуги</h1>
       <!-- <div class="py-2 px-6 bg-[#2A2A2A] rounded-2xl flex">

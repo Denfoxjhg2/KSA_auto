@@ -18,9 +18,13 @@ const openTG = () => {
     </div>
   </section>
   <section class="flex items-center justify-center pt-6">
-    <button class=" bg-[#FC0320] rounded-lg cursor-pointer shadow-xl/20 shadow-[#FC0320]">
-      <h1 class="text-white py-3 px-8 font-sans">Записаться</h1>
-    </button>
+    <router-link to="/order" class="self-center">
+      <button
+        class="py-3 px-9 bg-[#FC0320] rounded-lg cursor-pointer self-center shadow-xl/20 shadow-[#FC0320]"
+      >
+        <h1 class="text-white font-sans font-medium text-base">Записаться</h1>
+      </button>
+    </router-link>
   </section>
   <section class="pt-12 px-8">
     <h1 class="font-sans text-white pb-6">Ловкость рук наших мастеров. Никакой магии!</h1>

@@ -8,6 +8,8 @@ import antisound from "../pages/sound.vue";
 import fogclean from "../pages/fog.vue";
 import music from "../pages/music.vue";
 import antichrome from "../pages/antichrome.vue";
+import order from "../pages/order.vue";
+import lk from "../pages/lk.vue";
 
 const routes = [
   { name: "Homepage", path: "/", component: Home },
@@ -20,6 +22,8 @@ const routes = [
   { name: "Fogclean", path: "/fogclean", component: fogclean },
   { name: "Music", path: "/music", component: music },
   { name: "Antichrome", path: "/antichrome", component: antichrome },
+  { name: "Order", path: "/order", component: order },
+  { name: "Profile", path: "/lk", component: lk },
 ];
 
 export default routes;
