@@ -10,6 +10,8 @@ import music from "../pages/music.vue";
 import antichrome from "../pages/antichrome.vue";
 import order from "../pages/order.vue";
 import lk from "../pages/lk.vue";
+import login from "../pages/login.vue";
+import register from "../pages/register.vue"
 
 const routes = [
   { name: "Homepage", path: "/", component: Home },
@@ -24,6 +26,8 @@ const routes = [
   { name: "Antichrome", path: "/antichrome", component: antichrome },
   { name: "Order", path: "/order", component: order },
   { name: "Profile", path: "/lk", component: lk },
+  { name: "Login", path: "/login", component: login },
+  { name: "Register", path: "/register", component: register },
 ];
 
 export default routes;
